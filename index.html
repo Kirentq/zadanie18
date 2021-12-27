@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test 18</title>
+  <link rel="stylesheet" href="css/tailwind.min.css">
+  <link rel="stylesheet" href="css/lineicons.css">
+</head>
+
+<body>
+
+  <!-- nav -->
+  <header class="text-gray-600 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <img src="img/node-js-svgrepo-com.svg" alt="">
+        <span class="ml-3 text-xl">Test 18</span></a>
+      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 hover:text-gray-900">First Link</a>
+        <a class="mr-5 hover:text-gray-900">Second Link</a>
+        <a class="mr-5 hover:text-gray-900">Third Link</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <section class="text-gray-600 body-font">
+    <div id="result" class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h1 id="question" class="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">Вопрос</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Нужно выбрать правильный ответ и нажать на кнопку</p>
+      </div>
+      <div class="lg:w-2/3 w-full mx-auto overflow-auto">
+        <table class="table-auto w-full text-left whitespace-no-wrap">
+          <thead>
+            <tr>
+              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">Каков
+                правильный ответ?</th>
+              <th
+                class="w-10 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tr rounded-br">
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="guess_a" class="px-4 py-3 text-lg text-gray-900">ответ a</td>
+              <td class="w-10 text-center">
+                <input id="a" class="cursor-pointer" name="answer" type="radio">
+              </td>
+            </tr>
+            <tr>
+              <td id="guess_b" class="border-t-2 border-gray-200 px-4 py-3 text-lg text-gray-900">ответ b</td>
+              <td class="border-t-2 border-gray-200 w-10 text-center">
+                <input id="b" class="cursor-pointer" name="answer" type="radio">
+              </td>
+            </tr>
+            <tr>
+              <td id="guess_c" class="border-t-2 border-gray-200 px-4 py-3 text-lg text-gray-900">ответ c</td>
+              <td class="border-t-2 border-gray-200 w-10 text-center">
+                <input id="c" class="cursor-pointer" name="answer" type="radio">
+              </td>
+            </tr>
+            <tr>
+              <td id="guess_d" class="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-lg text-gray-900">ответ d
+              </td>
+              <td class="border-t-2 border-b-2 border-gray-200 w-10 text-center">
+                <input id="d" class="cursor-pointer" name="answer" type="radio">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="flex pl-4 mt-4 lg:w-2/3 w-full mx-auto">
+        <button id="end"
+          class="flex ml-auto text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded">Завершить
+          тест</button>
+        <button id="submit"
+          class="flex ml-auto text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded">Следующий</button>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
